@@ -90,7 +90,7 @@ def list_tasks(database, args):
         check_str = args[0]
     for task in database['tasks']:
         if check_str and task['status'] == check_str or check_str is None:
-            print(f"Task: {task['description']}\nStatus: {task['status']}\nCreation Date: {task['createdAt']}\nLast Update: {task['updatedAt']}")
+            print(f"ID: {task['ID']}\n Task: {task['description']}\nStatus: {task['status']}\nCreation Date: {task['createdAt']}\nLast Update: {task['updatedAt']}")
             print('\n\n')
 
 
